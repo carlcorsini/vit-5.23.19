@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ViT 5.22.19</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="shortcut icon" href="https://pbs.twimg.com/profile_images/941710578548137984/8Gn3U5My_400x400.jpg">
+</head>
+
+<body>
+
+
+
+
+    <div id="title" class="ui raised very padded text container segment">
+        <img class="centered ui small rounded image"
+            src="https://pbs.twimg.com/profile_images/941710578548137984/8Gn3U5My_400x400.jpg"
+            title="source: imgur.com" />
+        <h1 class="ui header">5.23.19 Day 4</h1>
+
+        <h2 class="ui header">Classroom: Hale (Room 312)</h2>
+        <a target="_blank" href="https://forms.gle/dzgGGMMGvE6w15cB7">
+            <button id="attendance" class="ui inverted violet button">
+                Attendance
+            </button>
+        </a>
+        <br>
+        <br>
+        <div class="ui dropdown button simple inverted blue huge">
+            <span class="text">Archive</span>
+            <i class="dropdown icon"></i>
+            <div class="ui menu huge">
+                <div class="item">
+                    <i class="dropdown icon"></i>
+                    <span class="text">Week 1</span>
+                    <div class="menu">
+                        <a href="https://vit-5-22-19.surge.sh/" target="_blank" class="item">5.22.19 (Day 3
+                            Terminal)</a>
+                        <div href="https://vit-5-23-19.surge.sh/" target="_blank" class="item">5.23.19 (Day 4 Git)</div>
+                    </div>
+                </div>
+                <!-- <div class="item">
+                    <i class="dropdown icon"></i>
+                    <span class="text">Week 2</span>
+                    <div class="menu">
+                        <div class="item">Item 3A</div>
+                        <div class="item">Item 3B</div>
+                        <div class="item">Item 3C</div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+    <div id="recap" class="ui raised very padded text container segment">
+
+        <img class="centered ui huge rounded image" src="https://i.imgur.com/OAQB0Mx.png" title="source: imgur.com" />
+        <br>
+        <h2 class="ui header">Recap Of Last Class:</h2>
+        <p>
+            Used the terminal and git to save a project on the cloud, continued working on HTML Learn units
+        </p>
+        <p>
+            For a refresher on how to create a project with terminal refer to <a
+                href="https://vit-5-22-19.surge.sh">yesterday's recap</a>
+        </p>
+        <a target="_blank" href="https://www.git-tower.com/blog/git-cheat-sheet">Git Cheat Sheet</a>
+        <h3>Goal: Create a project using the terminal and connect it with our github</h3>
+
+        <!-- <img class="ui large rounded image" src="https://i.imgur.com/vKVkf9M.png" title="source: imgur.com" /> -->
+
+        <h3 class="ui header">Git Refresher</h3>
+        <div class="ui ordered list">
+            <p>To begin create a new directory (<em>$ mkdir day-3</em>) using the terminal, change into that
+                directory (<em>$ cd day-3</em>) and create
+                an index.html file (<em>$ touch index.html</em>)</p>
+            <p>Use the <em>$ code .</em> command to open your project in VScode</p>
+            <p>In your index.html file use the <em>!</em> shortcut to create html boiler plate and save</p>
+            <!-- <img class="ui large rounded image" src="https://i.imgur.com/J8L5V1j.png" title="source: imgur.com" /> -->
+            <p>Now that you have created a new project we are ready to push to to the cloud! <i class="cloud icon"></i>
+            </p>
+            <p><em>These steps are broken down in more detail in the <a target="_blank"
+                        href="https://vit-5-22-19.surge.sh">5.22.19
+                        Recap</a> </em></p>
+            <p class="item">
+                Navigate back to the terminal and ensure you are in the new project directory (<em>$ pwd</em>) and run
+                the
+                command:
+            </p>
+            <p><em>$ git status</em></p>
+
+            <p>Hopefully you'll receive an error:</p>
+            <img class="ui huge rounded image" src="https://i.imgur.com/HOsYsHH.png" title="source: imgur.com" />
+            <br>
+            <p>If not don't fret! There are 2 other messages you may receive:</p>
+            <p>1. Command not found</p>
+            <p>2. Some sort of message about the status of your branch:</p>
+            <img class="ui huge rounded image" src="https://i.imgur.com/3Jra1Y3.png" title="source: imgur.com" />
+            <br>
+            <img class="ui huge rounded image" src="https://i.imgur.com/zs11cJ4.png" title="source: imgur.com" />
+
+            <p class="image-note">If you receive any of these messages, there is an easy fix, see me at some point
+                during class and
+                we'll get git fixed</p>
+            <br>
+
+            <p class="item">
+                If you received a <em>fatal</em> error from step 1 the next step is to initialize git with the command:
+            </p>
+            <p><em>$ git init</em></p>
+            <img class="ui huge rounded image" src="https://i.imgur.com/gLBgo70.png" title="source: imgur.com" />
+            <p class="image-note">We have created a <em>repository</em> on your local machine</p>
+
+            <p class="item">
+                use the command: <em>$ git status</em> to check on the status of your local repository and you should
+                receive this message:
+            </p>
+            <img class="ui huge image" src="https://i.imgur.com/rM7hs6c.png" title="source: imgur.com" />
+            <p class="image-note">This message is showing us files that are not tracked yet by git</p>
+
+            <p class="item">add the files to the staging area using the command:</em>
+            </p>
+            <p><em>$ git add index.html</em> or <em>$ git add .</em> (essentially git add all) </p>
+            <p>then check your git status again:</p>
+            <p><em>$ git status</em></p>
+            <img class="ui huge rounded image" src="https://i.imgur.com/PFrrRVr.png" title="source: imgur.com" />
+
+
+            <p class="image-note">now your tracked files should be green, they are ready to be committed to the
+                repository
+            </p>
+
+            <p class="item">
+                Almost there! Now we will commit or take a snapshot of our project at this point with the command:
+            </p>
+            <p><em>$ git commit -m "first commit"</em></p>
+            <img class="ui huge rounded image" src="https://i.imgur.com/m1GVP6y.png" title="source: imgur.com" />
+            <p class="image-note">We took at snapshot of the code, now we will link this local repository with one
+                the cloud</p>
+
+            <p class="item">Navigate to <a href="https://github.com">github.com</a> and create a new repository</p>
+            <img class="ui large rounded image" src="https://i.imgur.com/m05tO0m.png" title="source: imgur.com" />
+            <p class="image-note">click the "New" button</p>
+
+            <p class="item">On the next page <strong>DO NOT</strong> initialize the repository with a README, and name
+                it "day-3" (or whatever you'd like) </p>
+            <img class="ui huge rounded image" src="https://i.imgur.com/If1A7sE.png" title="source: imgur.com" />
+            <p>click <strong>create repository</strong></p>
+
+            <p class="item">Next we will copy the "...or push an existing repository from the command line" commands one
+                by one
+            </p>
+            <img class="ui huge rounded image" src="https://i.imgur.com/uMoHgrZ.png" title="source: imgur.com" />
+            <br>
+            <p class="image-note"><strong>FIRST:</strong> <em>$ git remote add origin
+                    https://github.com/USERNAME/REPOSITORYNAME.git
+                </em></p>
+            <p><strong>WAIT</strong> now make a change in your index.html file, save and commit those changes, refer to
+                <strong>steps 4
+                    and 5 </strong></p>
+            <p>Proceed with the last command:</p>
+            <p> <strong>SECOND:</strong> <em>$ git push -u origin master
+                </em></p>
+            <img class="ui huge rounded image" src="https://i.imgur.com/Y4Q2YJN.png" title="source: imgur.com" />
+            <br>
+            <p>You may be asked for your github credentials, type them in and you should see the above message. You may
+                also
+                receive an authentication error, that means you entered the incorrect credentials, see me for help on
+                this step</p>
+
+            <p class="item">Navigate back to github, refresh the page and you'll see your project now exists on github!
+            </p>
+            <img class="ui massive rounded image" src="https://i.imgur.com/zzdpHqV.png" title="source: imgur.com" />
+
+
+            <h2>If you ran in to errors at any point in this process don't worry, if you were able to connect your
+                project to github give yourself a round of applause!
+            </h2>
+            <br>
+            <div>
+                <img class="ui huge rounded image"
+                    src="https://media1.giphy.com/media/j3OqXA543NMfR4yL9I/giphy.gif?cid=790b76115ce726ff70674b2e2e0b2136&rid=giphy.gif"
+                    title="source: imgur.com" />
+            </div>
+
+            <p></p>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</body>
+
+</html>

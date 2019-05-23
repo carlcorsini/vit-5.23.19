@@ -1,0 +1,30 @@
+#title {
+    margin-top: 3em;
+    text-align: center
+}
+
+#attendance {
+    color-adjust: inherit;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+#recap {
+    font-size: 1.3em;
+}
+
+.image-note {
+    font-size: 1em
+}
+
+#command-not-found {
+    margin-top: .3em
+}
+
+body {
+    background-color: rgba(145, 0, 255, 0.42)
+}
+
+iframe {
+    text-align: center
+}
